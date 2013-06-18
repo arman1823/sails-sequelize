@@ -64,6 +64,12 @@ passport.use(new LocalStrategy(
         if (user.password != password) { return done(null, false, { message: 'Invalid password' }); }
         return done(null, user);
       })
+      /*
+      // AUTOLOGIN
+      findById(1, function(err, user){
+      	return done(null, user);
+      });
+      */
     });
   }
 ));
@@ -90,9 +96,12 @@ module.exports = {
 	log: {
 		level: 'verbose'
 	},
-
+	session: {
+		secret: 'COOKIESECRET'
+	},
   // Custom express middleware - we use this to register the passport middleware
 	express: {
+		secret: 'COOKIESECRET',
 		customMiddleware: function(app)
 		{
 			app.use(passport.initialize());

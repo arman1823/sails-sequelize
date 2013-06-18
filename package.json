@@ -1,10 +1,10 @@
 {
-    "name": "sportsCourts",
+    "name": "sails-sequelize",
     "private": true,
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "a Sails application",
     "dependencies": {
-        "sails": "git://github.com/Brathering/sails.git",
+        "sails": "git://github.com/Brathering/sails.git#v0.8.896",
         "passport": "latest",
         "passport-local": "latest"
     },
