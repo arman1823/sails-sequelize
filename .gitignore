@@ -1,3 +1,6 @@
+########################
+# node.js / npm
+########################
 lib-cov
 *.seed
 *.log
@@ -12,3 +15,30 @@ logs
 results
 
 npm-debug.log
+
+node_modules
+
+########################
+# sails
+########################
+.sails
+.waterline
+.rigging
+.tmp
+
+########################
+# misc / editors
+########################
+*~
+*#
+.DS_STORE
+.DS_Store
+.netbeans
+nbproject
+.idea
+documentation_examples
+
+########################
+# local config
+########################
+config/local.js
