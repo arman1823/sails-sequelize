@@ -42,3 +42,4 @@ documentation_examples
 # local config
 ########################
 config/local.js
+config_info
