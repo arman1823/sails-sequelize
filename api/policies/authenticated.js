@@ -24,5 +24,17 @@ module.exports = function(req, res, next)
 
 	if (req.isAuthenticated())
 		return next();
-	else return res.redirect('/login')
+	else return res.redirect('/auth')
 }
+
+/*
+module.exports = function (req, res, next) {
+  
+  // User is allowed, proceed to controller
+  var is_auth = req.isAuthenticated()
+  console.log('authenticated... is auth: ' + is_auth)
+  if (is_auth) return next();
+  // User is not allowed
+  else return res.redirect("/login");
+};
+*/

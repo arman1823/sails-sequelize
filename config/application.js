@@ -101,9 +101,7 @@ module.exports = {
 	},
   // Custom express middleware - we use this to register the passport middleware
 	express: {
-		secret: 'COOKIESECRET',
-		customMiddleware: function(app)
-		{
+		customMiddleware: function(app){
 			app.use(passport.initialize());
 			app.use(passport.session());
 		}
