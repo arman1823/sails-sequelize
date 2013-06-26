@@ -5,6 +5,7 @@
     "description": "a Sails application",
     "dependencies": {
         "sails": "git://github.com/Brathering/sails.git#v0.8.896",
+        "optimist": "latest",
         "passport": "latest",
         "passport-local": "latest"
     },
